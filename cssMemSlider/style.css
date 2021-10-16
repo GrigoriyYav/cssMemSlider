@@ -7,3 +7,74 @@ body {
     background-color: #2c2f33;
     width: 100vw;
 }
+
+.slider {
+    width: 90vw;
+    height: auto;
+    max-height: 90vh;
+    overflow: hidden;
+}
+  
+.middle {
+    width: 90vw;
+    max-width: 768px;
+    height: auto;
+    margin: 5% auto 0;
+    overflow: hidden;
+}
+  
+.responsive {
+    width: 90vw;
+    max-width: 768px;
+    height: auto;
+    max-height: 80vh;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+  }
+.slide {
+    transition: all 0.6s ease;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    width: 90px;
+    height: 19px;
+    max-height: 15px;
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    bottom: 15px;
+}
+
+@media (max-width: 769px) {
+    .navigation {
+      margin: 10px auto 0;
+    }
+  }
+  
+.bar {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #7289da;
+    border-radius: 50%;
+}
+
+#r1:checked ~ .slides .s1 {
+    margin-left: 0;
+  }
+  #r2:checked ~ .slides .s1 {
+    margin-left: -25%;
+  }
+  #r3:checked ~ .slides .s1 {
+    margin-left: -50%;
+  }
+  #r4:checked ~ .slides .s1 {
+    margin-left: -75%;
+  }

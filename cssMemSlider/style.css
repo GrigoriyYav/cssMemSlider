@@ -8,6 +8,10 @@ body {
     width: 100vw;
 }
 
+h1{
+    visibility: hidden;  
+}
+
 .slider {
     width: 90vw;
     height: auto;
@@ -49,12 +53,21 @@ body {
     margin-left: auto;
     margin-right: 0;
     position: relative;
-    bottom: 15px;
+    bottom: 22px;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 769px) {
     .navigation {
       margin: 10px auto 0;
+    }
+    .nav-container {
+        flex-direction: column-reverse;
     }
   }
   
@@ -76,5 +89,34 @@ body {
     margin-left: -50%;
   }
   #r4:checked ~ .slides .s1 {
+    margin-left: -75%;
+  }
+
+  .slidessss {
+    width: 400%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .meme-name {
+    font-size: 130%;
+    width: 90vw;
+    max-width: 768px;
+    height: auto;
+    max-height: 80vh;
+    color: white;
+    /*transition: all 0.2s ease;*/
+  }
+
+  #r1:checked ~ .nav-container .slidessss .s2 {
+    margin-left: 0;
+  }
+  #r2:checked ~ .nav-container .slidessss .s2 {
+    margin-left: -25%;
+  }
+  #r3:checked ~ .nav-container .slidessss .s2 {
+    margin-left: -50%;
+  }
+  #r4:checked ~ .nav-container .slidessss .s2 {
     margin-left: -75%;
   }

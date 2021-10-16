@@ -86,11 +86,89 @@ input[name="r"]{
     cursor: pointer;
 }
 
+.checkmark-1:active{
+    border: 2px solid darkgray;
+    background-color: darkgray;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    bottom: 2px;
+    left: -2px;
+}
+
+#r1:checked ~ .nav-container .navigation .bar .checkmark-1:active {
+    visibility: visible;
+    border-color: darkgray;
+    background-color: none;
+    width: 110%;
+    height: 110%;
+    bottom: 2px;
+    left: -2px;
+  }
+  .checkmark-2:active{
+    border: 2px solid darkgray;
+    background-color: darkgray;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    bottom: 2px;
+    left: -2px;
+}
+
+#r2:checked ~ .nav-container .navigation .bar .checkmark-2:active {
+    visibility: visible;
+    border-color: darkgray;
+    background-color: none;
+    width: 110%;
+    height: 110%;
+    bottom: 2px;
+    left: -2px;
+  }
+  .checkmark-3:active{
+    border: 2px solid darkgray;
+    background-color: darkgray;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    bottom: 2px;
+    left: -2px;
+}
+
+#r3:checked ~ .nav-container .navigation .bar .checkmark-3:active {
+    visibility: visible;
+    border-color: darkgray;
+    background-color: none;
+    width: 110%;
+    height: 110%;
+    bottom: 2px;
+    left: -2px;
+  }
+  .checkmark-4:active{
+    border: 2px solid darkgray;
+    background-color: darkgray;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    bottom: 2px;
+    left: -2px;
+}
+
+#r4:checked ~ .nav-container .navigation .bar .checkmark-4:active {
+    visibility: visible;
+    border-color: darkgray;
+    background-color: none;
+    width: 110%;
+    height: 110%;
+    bottom: 2px;
+    left: -2px;
+  }
+
 .bar:hover {
     border: 2px solid #ffffff;
     background-color: #ffffff;
     cursor: pointer;
 }
+
 
 .checkmark-1 {
     display: inline-block;

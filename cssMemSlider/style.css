@@ -50,7 +50,7 @@ input[name="r"]{
 .navigation {
     display: flex;
     justify-content: space-between;
-    gap: 10%;
+    gap: 10% 10%;
     width: 90px;
     height: 19px;
     max-height: 15px;
@@ -68,7 +68,8 @@ input[name="r"]{
 
 @media (max-width: 769px) {
     .navigation {
-      margin: 10px auto 0;
+      margin: 5% auto 0;
+      bottom: 10px;
     }
     .nav-container {
         flex-direction: column-reverse;
